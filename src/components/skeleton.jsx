@@ -56,6 +56,19 @@ export default function Skeleton() {
         >
           <Box
             sx={{
+              height: '196px',
+              p: 2,
+              borderBottom: '4px solid black',
+              margin: 0,
+              fontSize: {
+                xs: 60,
+              },
+            }}
+          >
+            HOME ABOUT
+          </Box>
+          <Box
+            sx={{
               height: 'auto',
               borderBottom: '4px solid black',
             }}
@@ -66,6 +79,7 @@ export default function Skeleton() {
               overlayText="Overlay Text"
             />
           </Box>
+
           <Box>
             <ImageHoverEffect
               src="images/kraehe.jpg"
@@ -110,6 +124,20 @@ export default function Skeleton() {
             borderBottom: isMd ? '4px solid black' : 'none',
           }}
         >
+          {' '}
+          <Box
+            sx={{
+              height: '196px',
+              p: 2,
+              borderBottom: '4px solid black',
+              margin: 0,
+              fontSize: {
+                xs: 60,
+              },
+            }}
+          >
+            CONTACT
+          </Box>
           <Box>
             <ImageHoverEffect
               src="images/moewe.jpg"
@@ -164,7 +192,7 @@ export default function Skeleton() {
             sx={{
               height: 'auto',
               p: 2,
-              lineHeight: 0.69,
+              lineHeight: 0.0,
               borderBottom: '4px solid black',
               margin: 0,
             }}

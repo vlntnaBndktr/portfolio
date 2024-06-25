@@ -21,6 +21,18 @@ body,
   width: 100%;
 }
 
+/* #root {
+  border: 2px solid blue;
+}
+
+body {
+  border: 2px solid green;
+}
+
+html {
+  border: 2px solid yellow;
+} */
+
 body {
   font-family: 'Reddit Mono', monospace;
   font-weight: 200;

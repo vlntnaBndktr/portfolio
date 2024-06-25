@@ -14,9 +14,10 @@ const Firstname = () => {
         },
         textAlign: 'right',
         paddingBottom: 10,
+        paddingTop: 10,
       }}
     >
-      VALENTINA BENDIKTER
+      VALENTINA BENEDIKTER
     </Box>
   );
 };
