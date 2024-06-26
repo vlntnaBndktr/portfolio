@@ -6,7 +6,7 @@ import { Image } from './imageeffects';
 const Item = ({ children }) => (
   <Box
     sx={{
-      // backgroundColor: 'white',
+      backgroundColor: 'white',
       padding: 1,
       textAlign: 'center',
       border: '2px solid black',
@@ -16,42 +16,73 @@ const Item = ({ children }) => (
   </Box>
 );
 
-export default function GridSkeleton() {
+export default function StickyHeader() {
   return (
     <>
-      <Box sx={{ flexGrow: 1, border: '2px solid yellow' }}>
-        <Grid container spacing={0}>
-          <Grid
-            item
-            xs={12}
-            sx={{
-              border: '6px solid blue',
-              textTransform: 'uppercase',
-              fontSize: 120,
-              position: 'sticky',
-              top: 0,
-              zIndex: 1,
-            }}
-          >
-            <Item sx={{ height: 200 }}>Valentina</Item>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sx={{
-              border: '6px solid blue',
-              textTransform: 'uppercase',
-              fontSize: 120,
-              position: 'sticky',
-              top: 0,
-              zIndex: 2,
-              height: 200,
-            }}
-          >
-            <Item sx={{ height: 200 }}>Benedikter</Item>
-          </Grid>
-        </Grid>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between', // Space between for left and right alignment
+          alignItems: 'center',
+          textTransform: 'uppercase',
+          position: 'sticky',
+          top: 0,
+          width: '100%',
+          zIndex: 1,
+          backgroundColor: 'white',
+          lineHeight: 0.8,
+          px: 1,
+        }}
+      >
+        <span
+          style={{
+            textAlign: 'left',
+            fontSize: '80px',
+          }}
+        >
+          About Projects Contact
+        </span>
+        <span
+          style={{
+            textAlign: 'right',
+            fontSize: '160px',
+          }}
+        >
+          Valentina
+        </span>
       </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between', // Space between for left and right alignment
+          alignItems: 'center',
+          textTransform: 'uppercase',
+          position: 'sticky',
+          top: 0,
+          width: '100%',
+          zIndex: 2,
+          lineHeight: 0.8,
+          px: 1,
+        }}
+      >
+        <span
+          style={{
+            textAlign: 'left',
+            fontSize: '80px',
+          }}
+        >
+          Projects
+        </span>
+        <span
+          style={{
+            textAlign: 'right',
+            fontSize: '160px',
+          }}
+        >
+          Benedikter
+        </span>
+      </Box>
+
       <Box sx={{ flexGrow: 1, border: '2px solid red' }}>
         <Grid container spacing={0}>
           {/* Erster Vertikaler Container */}
@@ -63,13 +94,14 @@ export default function GridSkeleton() {
               alignItems="stretch"
             >
               <Grid item xs={12}>
-                <Item>xs=12</Item>
+                <Image src="images\moewe.jpg" alt="Moewe"></Image>
               </Grid>
               <Grid item xs={12}>
                 <Item>xs=12</Item>
               </Grid>
             </Grid>
           </Grid>
+          {/* Zweiter Container */}
           <Grid item xs={3} sx={{ border: '2px solid blue' }}>
             <Grid
               container
@@ -78,14 +110,14 @@ export default function GridSkeleton() {
               alignItems="stretch"
             >
               <Grid item xs={12}>
-                <Item>xs=12</Item>
+                <Image src="LogoWienerGenossenschaften.png" alt="Logo"></Image>
               </Grid>
               <Grid item xs={12}>
                 <Item>xs=12</Item>
               </Grid>
             </Grid>
           </Grid>
-          {/* Zweiter Container */}
+          {/* Dritter Container */}
           <Grid item xs={6} sx={{ border: '2px solid green' }}>
             <Grid
               container
@@ -97,7 +129,7 @@ export default function GridSkeleton() {
                 <Image src="images\moewe.jpg" alt="Moewe"></Image>
               </Grid>
               <Grid item xs={12}>
-                <Item></Item>
+                <Image src="images\moewe.jpg" alt="Moewe"></Image>
               </Grid>
             </Grid>
           </Grid>
