@@ -28,10 +28,11 @@ body,
 body {
   border: 2px solid green;
 }
+*/
 
 html {
-  border: 2px solid yellow;
-} */
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Reddit Mono', monospace;
