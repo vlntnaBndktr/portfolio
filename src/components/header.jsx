@@ -1,11 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { Grid, Typography } from '@mui/material';
-import Firstname from './firstname';
-import Lastname from './lastname';
-import Techskills from './techskills';
+import Grid from '@mui/material/Grid';
+import { Link, Element } from 'react-scroll';
+import { Image } from './imageeffects';
 
-function Header() {
+export default function Header() {
   return (
     <>
       <Box
@@ -18,45 +17,56 @@ function Header() {
           top: 0,
           width: '100%',
           zIndex: 2,
-          lineHeight: 1,
-          px: 4,
-          border: '1px solid black',
+
+          lineHeight: 0.8,
+          px: 1,
         }}
       >
         <Link to="about" smooth={true} duration={1000}>
-          <Box
+          <span
             style={{
               textAlign: 'left',
-              fontSize: '60px',
+              fontSize: '80px',
               cursor: 'pointer',
-              width: '20vh',
-              border: '1px solid black',
             }}
           >
             About Projects Contact
-          </Box>{' '}
+          </span>{' '}
         </Link>
         <span
-          id="firstName"
           style={{
             textAlign: 'right',
-            fontSize: '200px',
-            position: 'fixed',
-            top: 0,
-            right: 0,
+            fontSize: '160px',
           }}
         >
           Valentina
         </span>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          textTransform: 'uppercase',
+          position: 'sticky',
+          top: 0,
+          width: '100%',
+          zIndex: 1,
+          lineHeight: 0.8,
+          px: 1,
+          backgroundColor: 'white',
+        }}
+      >
         <span
-          id="lastName"
           style={{
-            border: '1px solid black',
+            textAlign: 'left',
+            fontSize: '80px',
+          }}
+        ></span>
+        <span
+          style={{
             textAlign: 'right',
-            fontSize: '200px',
-            position: 'fixed',
-            top: 0,
-            right: 0,
+            fontSize: '160px',
           }}
         >
           Benedikter

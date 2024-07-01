@@ -3,56 +3,26 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Link, Element } from 'react-scroll';
 import { Image, ImageHoverEffect } from './imageeffects';
+import { Typography } from '@mui/material';
 
-const Item = ({ children }) => (
-  <Box
-    sx={{
-      backgroundColor: 'white',
-      padding: 1,
-      textAlign: 'center',
-    }}
-  >
-    {children}
-  </Box>
-);
-
-export default function StickyHeader() {
+export default function Positions() {
   return (
     <>
-      <Box
-        sx={{
-          position: 'relative',
-          px: 4,
-          border: '2px solid green',
-        }}
-      >
-        <Box
-          sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            fontSize: 160,
-            border: '2px solid red',
-          }}
-        >
-          Valentina
+      <Box className="parent">
+        <h2>Parent</h2>
+
+        <Box className="child child-1">
+          <span>Valentina</span>
         </Box>
-        <Box
-          sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            fontSize: 160,
-            border: '2px solid red',
-          }}
-        >
-          Benedikter
+
+        <Box className="child child-2">
+          <span>Benedikter</span>
         </Box>
       </Box>
       <Box
         sx={{
           position: 'sticky',
-          top: 20,
+          top: 0,
           display: 'flex',
           flexDirection: 'row',
           textAlign: 'left',
@@ -74,7 +44,6 @@ export default function StickyHeader() {
           Contact
         </Link>
       </Box>
-
       <Box sx={{ flexGrow: 1, border: '3px solid white' }}>
         <Grid container spacing={0.5}>
           {/* Erster Vertikaler Container */}
@@ -109,9 +78,7 @@ export default function StickyHeader() {
               <Grid item xs={12}>
                 <Image src="LogoWienerGenossenschaften.png" alt="Logo"></Image>
               </Grid>
-              <Grid item xs={12}>
-                <Item>xs=12</Item>
-              </Grid>
+              <Grid item xs={12}></Grid>
             </Grid>
           </Grid>
           {/* Dritter Container */}

@@ -4,31 +4,12 @@
   box-sizing: border-box;
 }
 
-/* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 200 to 900 */
-
 .reddit-mono-portfolio {
   font-family: 'Reddit Mono', monospace;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
 }
-
-html,
-body,
-#root {
-  /* height: 100%;
-  width: 100%; */
-}
-
-/* #root {
-  border: 2px solid blue;
-}
-
-body {
-  border: 2px solid green;
-}
-*/
 
 html {
   scroll-behavior: smooth;
@@ -37,5 +18,33 @@ html {
 body {
   font-family: 'Reddit Mono', monospace;
   font-weight: 200;
-  /* background-color: #f0f0f0; */
+}
+
+/* #firstName:hover {
+  color: grey;
+} */
+
+.child {
+  position: absolute;
+  top: 0;
+}
+
+.child-1 {
+  left: 0;
+  font-size: 200px;
+  border: 2px solid blue;
+  text-transform: uppercase;
+}
+
+.child-2 {
+  left: 0;
+  font-size: 200px;
+  border: 2px solid red;
+  text-transform: uppercase;
+}
+
+.parent {
+  position: relative;
+  border: 2px solid green;
+  height: 400px;
 }

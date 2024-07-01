@@ -20,8 +20,7 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
         width: '100%',
         height: 'auto',
         overflow: 'hidden',
-        borderBottom: '4px solid black',
-        filter: hovered ? 'grayscale(50%)' : 'grayscale(100%)', // Zeigt das Bild in Schwarz-Weiß an
+        filter: hovered ? 'brightness(50%)' : 'grayscale(100%)', // Zeigt das Bild in Schwarz-Weiß an
         transition: 'filter 4s ease', // Übergangseffekt für den Filter
       }}
       onMouseEnter={handleMouseEnter}
@@ -39,12 +38,13 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
       />
       <Box
         sx={{
-          fontSize: 30,
+          fontSize: 40,
+          fontWeight: 400,
           position: 'absolute',
-          top: 3,
-          left: 3,
+          bottom: 0,
+          right: 0,
           // color: 'black',
-          padding: '8px',
+          padding: '20px',
           zIndex: 1,
           color: hovered ? 'white' : 'black',
           transition: 'opacity 0.3s ease',
