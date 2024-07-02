@@ -11,28 +11,36 @@
   color: grey;
 } */
 
+.heart {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
 .child {
   position: absolute;
   top: 0;
-  right: 5px;
 }
 
 .child-1 {
   font-size: 200px;
   /* border: 2px solid blue; */
   text-transform: uppercase;
+  right: 10px;
 }
 
 .child-2 {
   font-size: 200px;
   /* border: 2px solid red; */
   text-transform: uppercase;
+  right: 10px;
 }
 
 .parent {
   position: relative;
   /* border: 2px solid green; */
-  height: clamp(86px, 18vw, 330px);
+  height: clamp(50px, 12.5vw, 230px);
+  border-bottom: 2px solid black;
 }
 
 .menu {
@@ -40,19 +48,24 @@
   top: 0;
   display: flex;
   text-align: left;
-  justify-content: space-between;
+  justify-content: center;
   cursor: pointer;
   z-index: 1;
-
-  padding-left: 16px; /* px={2} in Material-UI */
+  padding-top: 32px; /* px={2} in Material-UI */
+  padding-left: 16px;
   padding-right: 16px;
-  background-color: white;
 }
 
 /* Responsive Border: */
 .border {
   border-style: solid;
   border-color: black;
+}
+.border-tb {
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-color: black;
 }
 
 .border-top {
@@ -83,18 +96,18 @@
 
 @media (min-width: 601px) and (max-width: 960px) {
   .responsive-border {
-    border-width: 4px;
+    border-width: 2px;
   }
 }
 
 @media (min-width: 961px) and (max-width: 1280px) {
   .responsive-border {
-    border-width: 6px;
+    border-width: 2px;
   }
 }
 
 @media (min-width: 1281px) {
   .responsive-border {
-    border-width: 8px;
+    border-width: 2px;
   }
 }

@@ -6,10 +6,10 @@ const theme = createTheme({
     fontWeight: 200,
     h1: {
       fontFamily: 'Reddit Mono, monospace',
-      fontWeight: 200,
+      fontWeight: 300,
       fontSize: 'clamp(2rem, 17.5vw, 20rem)',
       position: 'relative',
-      lineHeight: 1,
+      lineHeight: 0.71,
     },
 
     h2: {

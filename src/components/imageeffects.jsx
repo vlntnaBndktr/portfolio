@@ -20,8 +20,8 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
         width: '100%',
         height: 'auto',
         overflow: 'hidden',
-        filter: hovered ? 'brightness(50%)' : 'grayscale(100%)', // Zeigt das Bild in Schwarz-Weiß an
-        transition: 'filter 4s ease', // Übergangseffekt für den Filter
+        filter: hovered ? 'brightness(100%)' : 'brightness(50%)',
+        transition: 'filter 2s ease', // Übergangseffekt für den Filter
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -33,7 +33,6 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
           display: 'block',
           width: '100%',
           height: 'auto',
-          transition: 'filter 0.3s ease', // Übergangseffekt für den Filter
         }}
       />
       <Box
