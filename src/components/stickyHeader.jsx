@@ -4,18 +4,6 @@ import Grid from '@mui/material/Grid';
 import { Link, Element } from 'react-scroll';
 import { Image, ImageHoverEffect } from './imageeffects';
 
-const Item = ({ children }) => (
-  <Box
-    sx={{
-      backgroundColor: 'white',
-      padding: 1,
-      textAlign: 'center',
-    }}
-  >
-    {children}
-  </Box>
-);
-
 export default function StickyHeader() {
   return (
     <>
@@ -55,7 +43,7 @@ export default function StickyHeader() {
           top: 20,
           display: 'flex',
           flexDirection: 'row',
-          textAlign: 'left',
+          textAlign: 'center',
           justifyContent: 'space-between',
           fontSize: 60,
           cursor: 'pointer',
@@ -109,9 +97,7 @@ export default function StickyHeader() {
               <Grid item xs={12}>
                 <Image src="LogoWienerGenossenschaften.png" alt="Logo"></Image>
               </Grid>
-              <Grid item xs={12}>
-                <Item>xs=12</Item>
-              </Grid>
+              <Grid item xs={12}></Grid>
             </Grid>
           </Grid>
           {/* Dritter Container */}

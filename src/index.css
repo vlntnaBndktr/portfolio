@@ -1,50 +1,13 @@
+/*global Style*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.reddit-mono-portfolio {
-  font-family: 'Reddit Mono', monospace;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Reddit Mono', monospace;
   font-weight: 200;
-}
-
-/* #firstName:hover {
-  color: grey;
-} */
-
-.child {
-  position: absolute;
-  top: 0;
-}
-
-.child-1 {
-  left: 0;
-  font-size: 200px;
-  border: 2px solid blue;
-  text-transform: uppercase;
-}
-
-.child-2 {
-  left: 0;
-  font-size: 200px;
-  border: 2px solid red;
-  text-transform: uppercase;
-}
-
-.parent {
-  position: relative;
-  border: 2px solid green;
-  height: 400px;
+  scroll-behavior: smooth;
 }

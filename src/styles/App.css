@@ -1,0 +1,41 @@
+/* App Komponente */
+
+.reddit-mono-200 {
+  font-family: 'Reddit Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* #firstName:hover {
+  color: grey;
+} */
+
+.child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.child-1 {
+  font-size: 200px;
+  /* border: 2px solid blue; */
+  text-transform: uppercase;
+}
+
+.child-2 {
+  font-size: 200px;
+  /* border: 2px solid red; */
+  text-transform: uppercase;
+}
+
+.parent {
+  position: relative;
+  /* border: 2px solid green; */
+  height: clamp(86px, 18vw, 330px);
+}
+
+.menu {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}

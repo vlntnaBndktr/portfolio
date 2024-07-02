@@ -1,9 +1,8 @@
-import './App.css';
+import './styles/App.css';
 import * as React from 'react';
 import { ThemeProvider } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Skeleton from './components/skeleton';
-import GridSkeleton from './components/gridSkeleton';
+import { Typography } from '@mui/material';
 import StickyHeader from './components/stickyHeader';
 import Positions from './components/positions';
 import theme from './styles/theme';
