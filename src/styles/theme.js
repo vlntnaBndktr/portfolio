@@ -15,7 +15,25 @@ const theme = createTheme({
     h2: {
       fontFamily: 'Reddit Mono, monospace',
       fontWeight: 200,
+      fontSize: '2.125rem', // Standardgröße für größere Bildschirme (entspricht 'h2')
+      '@media (max-width:600px)': {
+        fontSize: '2rem', // entspricht 'h4' für kleinere Bildschirme
+      },
+      '@media (min-width:601px) and (max-width:960px)': {
+        fontSize: '3rem', // Anpassung für mittlere Bildschirme
+      },
+      '@media (min-width:961px) and (max-width: 1280px)': {
+        fontSize: '4rem', // Anpassung für größere mittlere Bildschirme
+      },
+      '@media (min-width: 1281px)': {
+        fontSize: '5rem',
+      },
     },
+    h4: {
+      fontFamily: 'Reddit Mono, monospace',
+      fontWeight: 200,
+    },
+
     body1: {
       fontFamily: 'Reddit Mono, monospace',
       fontWeight: 200,
