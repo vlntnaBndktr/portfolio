@@ -29,6 +29,11 @@ const theme = createTheme({
         fontSize: '5rem',
       },
     },
+    h3: {
+      fontFamily: 'Reddit Mono, monospace',
+      fontSize: '2rem',
+      fontWeight: 400,
+    },
     h4: {
       fontFamily: 'Reddit Mono, monospace',
       fontWeight: 200,

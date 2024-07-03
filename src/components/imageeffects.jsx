@@ -20,7 +20,7 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
         width: '100%',
         height: 'auto',
         overflow: 'hidden',
-        filter: hovered ? 'brightness(100%)' : 'brightness(50%)',
+        filter: hovered ? 'grayscale(0%)' : 'grayscale(100%)',
         transition: 'filter 2s ease', // Übergangseffekt für den Filter
       }}
       onMouseEnter={handleMouseEnter}
@@ -64,6 +64,7 @@ const Image = ({ src, alt }) => {
         width: '100%',
         height: 'auto',
         overflow: 'hidden',
+        filter: 'grayscale(100%)',
       }}
     >
       <img
@@ -79,4 +80,27 @@ const Image = ({ src, alt }) => {
   );
 };
 
-export { ImageHoverEffect, Image };
+const TechIcon = ({ src, alt }) => {
+  return (
+    <Box
+      sx={{
+        display: 'inline-block',
+        width: 'auto',
+        height: '80px',
+      }}
+    >
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          display: 'block',
+          width: 'auto',
+          height: '100%',
+          // filter: 'grayscale(100%)',
+        }}
+      />
+    </Box>
+  );
+};
+
+export { ImageHoverEffect, Image, TechIcon };
