@@ -50,10 +50,25 @@
   border-bottom: 2px solid black;
 }
 
-.text-justify {
+.text-justify-uppercase {
   text-align: justify;
   text-transform: uppercase;
-  padding: 32px;
+  line-height: 1;
+}
+
+.text-justify {
+  text-align: justify;
+  line-height: 1;
+}
+
+.header-left {
+  float: left;
+  text-transform: uppercase;
+}
+
+.header-right {
+  float: right;
+  text-transform: uppercase;
 }
 
 .flex-box {
@@ -61,47 +76,13 @@
   justify-content: space-between; /* Space between für left and right alignment */
   align-items: center;
   width: 100%;
-
   padding: 16px;
-}
-
-.flex-header-right {
-  text-align: right;
-  font-size: 80px;
-  font-weight: 300;
-  line-height: 0.8;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.flex-header-left {
-  text-align: left;
-  font-size: 100px;
-  font-weight: 300;
-  line-height: 0.8;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.flex-content-right {
-  text-align: right;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1;
-  cursor: pointer;
-}
-.flex-content-left {
-  text-align: left;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1;
-  cursor: pointer;
 }
 
 .flex-container-row {
   display: flex;
   flex-direction: row;
-  gap: 20px; /* Optional, fügt Abstand zwischen den Icons hinzu */
+  gap: 20px;
 }
 
 /* Responsive Border: */

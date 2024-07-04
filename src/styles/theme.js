@@ -31,17 +31,20 @@ const theme = createTheme({
     },
     h3: {
       fontFamily: 'Reddit Mono, monospace',
-      fontSize: '2rem',
-      fontWeight: 400,
+      fontSize: '5rem',
+      fontWeight: 300,
     },
     h4: {
       fontFamily: 'Reddit Mono, monospace',
+      fontSize: '3rem',
       fontWeight: 200,
     },
 
     body1: {
       fontFamily: 'Reddit Mono, monospace',
-      fontWeight: 200,
+      fontSize: '2rem',
+      fontWeight: 300,
+      lineHeight: 1.2,
     },
   },
 });

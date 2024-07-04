@@ -27,7 +27,7 @@ export default function Positions() {
           <Typography variant="h2">Contact</Typography>
         </Link>
       </Box>
-      {/* NAME: */}
+      {/* NAME/LOGO: */}
       <Box className="parent" marginBottom={4}>
         <Box className="heart">
           <FavoriteIcon color="success" fontSize="large"></FavoriteIcon>
@@ -40,11 +40,13 @@ export default function Positions() {
           <Typography variant="h1">Benedikter</Typography>
         </Box>
       </Box>
-
+      {/* ABOUT: */}
       <Element name="about">
-        <Box className="flex-box">
-          <span className="flex-header-left">Full Stack Web Developer</span>
-          <span className="flex-content-right">
+        <Box margin={2}>
+          <Typography variant="h3" className="header-left" marginRight={5}>
+            Full Stack Web Developer
+          </Typography>
+          <Typography className="text-justify" variant="body1">
             I am a Web Developer based in Vienna. I am particularly interested
             in the development of intuitive and appealing user interfaces, where
             I can combine design and technical skills, as well as the creation
@@ -53,21 +55,23 @@ export default function Positions() {
             programming, I love to continue construction in the analog world. I
             always have at least one craft or arts project that I am building
             and tinkering with.
-          </span>
+          </Typography>
+        </Box>
+        <Box margin={2}>
+          <Typography variant="h3" className="header-left" marginRight={5}>
+            Techstack
+          </Typography>
+          <Typography className="text-justify" variant="body1">
+            HTML CSS JavaScript Node.js React MongoDB MVC REST CRUD APIs
+            JSON-Web-Tokens Bcrypt Express.js WebSockets Leaflet Cheerio Vite
+            State-Management(Zustand) Build Tools(Vite) Postman VSCode
+            Gitlab/GitHub Material-UI Bootstrap Figma Canva Agile UX/UI-Design
+            Agile-Methods/SCRUM
+          </Typography>
         </Box>
       </Element>
-      <Box className="text-justify">
-        {' '}
-        <Typography variant="h3">
-          <span className="flex-header-left">Techstack</span> HTML CSS
-          JavaScript Node.js React MongoDB MVC REST CRUD APIs JSON-Web-Tokens
-          Bcrypt Express.js WebSockets Leaflet Cheerio Vite
-          State-Management(Zustand) Build Tools(Vite) Postman VSCode
-          Gitlab/GitHub Material-UI Bootstrap Figma Canva Agile UX/UI-Design
-          Agile-Methods/SCRUM
-        </Typography>
-      </Box>
-      <Box className="flex-container-row">
+
+      <Box className="flex-container-row" margin={2}>
         <TechIcon src="icons\Figma.png" alt="Figma"></TechIcon>
         <TechIcon src="icons\Canva.png" alt="Canva"></TechIcon>
         <TechIcon src="icons\JWT.png" alt="JWT"></TechIcon>
@@ -77,7 +81,7 @@ export default function Positions() {
         <TechIcon src="icons\MUI.png" alt="MUI"></TechIcon>
       </Box>
       {/* PROJECTS: */}
-      <Box className=" responsive-border" margin={2} sx={{}}>
+      <Box margin={2}>
         <Grid container spacing={2}>
           {/* Erster Vertikaler Container */}
           <Grid item xs={4} className="border-right  responsive-border">
@@ -89,9 +93,7 @@ export default function Positions() {
               spacing={2}
             >
               <Grid item xs={12} className="border-bottom  responsive-border">
-                <Typography variant="h2" className="flex-header-left">
-                  PROJECTS
-                </Typography>
+                <Typography variant="h3">PROJECTS</Typography>
               </Grid>
               <Grid item xs={12} className="border-bottom  responsive-border">
                 <ImageHoverEffect
@@ -168,15 +170,20 @@ export default function Positions() {
           </Grid>
         </Grid>
       </Box>
-
+      {/* PROJECTS: */}
       <Element name="contact">
-        <Box className="flex-box">
-          <span className="flex-content-left">
+        <Box margin={2}>
+          <Typography variant="h3" className="header-right" marginLeft={5}>
+            Contact
+          </Typography>
+          <Typography className="text-justify" variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
             maiores itaque! Odit amet sint omnis, nisi fuga commodi soluta
             veritatis quam delectus beatae? Quasi, recusandae necessitatibus.
-          </span>
-          <span className="flex-header-right">Contact</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
+            maiores itaque! Odit amet sint omnis, nisi fuga commodi soluta
+            veritatis quam delectus beatae? Quasi, recusandae necessitatibus.
+          </Typography>
         </Box>
       </Element>
     </>
