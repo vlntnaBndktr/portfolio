@@ -80,27 +80,4 @@ const Image = ({ src, alt }) => {
   );
 };
 
-const TechIcon = ({ src, alt }) => {
-  return (
-    <Box
-      sx={{
-        display: 'inline-block',
-        width: 'auto',
-        height: '80px',
-      }}
-    >
-      <img
-        src={src}
-        alt={alt}
-        style={{
-          display: 'block',
-          width: 'auto',
-          height: '100%',
-          // filter: 'grayscale(100%)',
-        }}
-      />
-    </Box>
-  );
-};
-
-export { ImageHoverEffect, Image, TechIcon };
+export { ImageHoverEffect, Image };

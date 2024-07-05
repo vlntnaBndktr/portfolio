@@ -31,8 +31,22 @@ const theme = createTheme({
     },
     h3: {
       fontFamily: 'Reddit Mono, monospace',
-      fontSize: '5rem',
       fontWeight: 300,
+      fontSize: '5rem',
+      '@media (max-width:600px)': {
+        fontSize: '2rem', // Smartphone/kleinere Bildschirme
+        fontWeight: 400,
+      },
+      '@media (min-width:601px) and (max-width:960px)': {
+        fontSize: '3rem', // Anpassung für mittlere Bildschirme
+        fontWeight: 400,
+      },
+      '@media (min-width:961px) and (max-width: 1280px)': {
+        fontSize: '5rem', // Anpassung für größere mittlere Bildschirme
+      },
+      '@media (min-width: 1281px)': {
+        fontSize: '5rem',
+      },
     },
     h4: {
       fontFamily: 'Reddit Mono, monospace',
@@ -45,6 +59,20 @@ const theme = createTheme({
       fontSize: '2rem',
       fontWeight: 300,
       lineHeight: 1.2,
+      '@media (max-width:600px)': {
+        fontSize: '1rem', // Smartphone/kleinere Bildschirme
+        fontWeight: 400,
+      },
+      '@media (min-width:601px) and (max-width:960px)': {
+        fontSize: '1rem', // Anpassung für mittlere Bildschirme
+        fontWeight: 400,
+      },
+      '@media (min-width:961px) and (max-width: 1280px)': {
+        fontSize: '1.5rem', // Anpassung für größere mittlere Bildschirme
+      },
+      '@media (min-width: 1281px)': {
+        fontSize: '2rem',
+      },
     },
   },
 });

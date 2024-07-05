@@ -8,14 +8,13 @@
 }
 
 .menu {
-  /* position: sticky;
-  top: 0px; */
+  position: relative;
   display: flex;
   text-align: left;
   justify-content: center;
   cursor: pointer;
-  z-index: 1;
   padding: 16px;
+  z-index: 3;
 }
 
 .child {
@@ -28,6 +27,7 @@
   /* border: 2px solid blue; */
   text-transform: uppercase;
   right: 10px;
+  z-index: 1;
 }
 
 .child-2 {
@@ -35,6 +35,7 @@
   /* border: 2px solid red; */
   text-transform: uppercase;
   right: 10px;
+  z-index: 2;
 }
 
 .heart {
@@ -79,10 +80,35 @@
   padding: 16px;
 }
 
+/* Marquee Techstack: */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .flex-container-row {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  align-items: center;
+}
+
+.tech-icon {
+  margin-right: 10px;
+  /* border: 1px solid black; */
 }
 
 /* Responsive Border: */

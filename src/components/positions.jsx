@@ -4,17 +4,17 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { Link, Element } from 'react-scroll';
-import { Image, ImageHoverEffect, TechIcon } from './imageeffects';
+import { Image, ImageHoverEffect } from './imageeffects';
 import { Container, Typography } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import '../styles/App.css';
+import Techstack from './techstack';
 
 export default function Positions() {
   const theme = useTheme();
 
   return (
     <>
-      {/* <Box className="border-bottom responsive-border">i</Box> */}
       {/* MENU: */}
       <Box className="menu border-bottom  responsive-border">
         <Link to="about" smooth={true} duration={1000}>
@@ -57,132 +57,145 @@ export default function Positions() {
             and tinkering with.
           </Typography>
         </Box>
+        <Box paddingBottom={4} marginTop={4}>
+          <Techstack />
+        </Box>
         <Box margin={2}>
-          <Typography variant="h3" className="header-left" marginRight={5}>
+          <Typography variant="h3" className="header-right" marginLeft={5}>
             Techstack
           </Typography>
           <Typography className="text-justify" variant="body1">
-            HTML CSS JavaScript Node.js React MongoDB MVC REST CRUD APIs
-            JSON-Web-Tokens Bcrypt Express.js WebSockets Leaflet Cheerio Vite
-            State-Management(Zustand) Build Tools(Vite) Postman VSCode
-            Gitlab/GitHub Material-UI Bootstrap Figma Canva Agile UX/UI-Design
-            Agile-Methods/SCRUM
+            JavaScript HTML CSS MongoDB Express.js React Node.js MVC Mongoose
+            RESTful-web-services CRUD APIs JSON-Web-Tokens Bcrypt WebSockets
+            Leaflet Cheerio Vite State-Management(Zustand) Build Tools(Vite)
+            Postman VSCode Gitlab/GitHub Material-UI Bootstrap Figma Canva Agile
+            UX/UI-Design Agile-Methods/SCRUM
           </Typography>
         </Box>
       </Element>
-
-      <Box className="flex-container-row" margin={2}>
-        <TechIcon src="icons\Figma.png" alt="Figma"></TechIcon>
-        <TechIcon src="icons\Canva.png" alt="Canva"></TechIcon>
-        <TechIcon src="icons\JWT.png" alt="JWT"></TechIcon>
-        <TechIcon src="icons\MERN-logo.png" alt="MERN"></TechIcon>
-        <TechIcon src="icons\mongoose.png" alt="mongoose"></TechIcon>
-        <TechIcon src="icons\Zustand.png" alt="Zustand"></TechIcon>
-        <TechIcon src="icons\MUI.png" alt="MUI"></TechIcon>
-      </Box>
       {/* PROJECTS: */}
-      <Box margin={2}>
-        <Grid container spacing={2}>
-          {/* Erster Vertikaler Container */}
-          <Grid item xs={4} className="border-right  responsive-border">
-            <Grid
-              container
-              direction="column"
-              justifyContent="center"
-              alignItems="stretch"
-              spacing={2}
-            >
-              <Grid item xs={12} className="border-bottom  responsive-border">
+      <Element name="projects">
+        <Box className="border responsive-border">
+          <Grid container columns={{ xs: 4, md: 12 }}>
+            {/* Erster Vertikaler Container */}
+            <Grid item xs={4}>
+              <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="stretch"
+              >
+                {/* <Grid item xs={12}>
                 <Typography variant="h3">PROJECTS</Typography>
-              </Grid>
-              <Grid item xs={12} className="border-bottom  responsive-border">
-                <ImageHoverEffect
-                  src="images\moewe.jpg"
-                  alt="Moewe"
-                  overlayText="in bruges"
-                />
-              </Grid>
-              <Grid item xs={12} className="border-bottom  responsive-border">
-                <ImageHoverEffect
-                  src="images\cat.jpg"
-                  alt="Cat"
-                  overlayText="black cat"
-                />
-              </Grid>
-              <Grid item xs={12} className="border-bottom  responsive-border">
-                <ImageHoverEffect
-                  src="images\Tisch1.jpg"
-                  alt="Tisch"
-                  overlayText="building a table"
-                />
-              </Grid>
-            </Grid>
-          </Grid>
-          {/* Zweiter Container */}
-          <Grid item xs={4} className="border-right  responsive-border">
-            <Grid
-              container
-              direction="column"
-              justifyContent="center"
-              alignItems="stretch"
-              spacing={2}
-            >
-              <Grid item xs={12} className="border-bottom  responsive-border">
-                <ImageHoverEffect
-                  src="images\Licht.jpg"
-                  alt="Licht"
-                  overlayText="light"
-                />
+              </Grid> */}
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\moewe.jpg"
+                    alt="Moewe"
+                    overlayText="oostende"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\cat.jpg"
+                    alt="Cat"
+                    overlayText="peloponnese roadtrip"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\Tisch1.jpg"
+                    alt="Tisch"
+                    overlayText="building a table"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\painting1.jpg"
+                    alt="acrylic paintig on cardboard"
+                    overlayText="acrylic on cardboard"
+                  />
+                </Grid>
               </Grid>
             </Grid>
-          </Grid>
-          {/* Dritter Container */}
-          <Grid item xs={4} sx={{}}>
-            <Grid
-              container
-              direction="column"
-              justifyContent="center"
-              alignItems="stretch"
-              spacing={2}
-            >
-              <Grid item xs={12} className="border-bottom  responsive-border">
-                <ImageHoverEffect
-                  src="images\friends.jpg"
-                  alt="Friends"
-                  overlayText="friends"
-                />
+            {/* Zweiter Container */}
+            <Grid item xs={4}>
+              <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="stretch"
+              >
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\Licht.jpg"
+                    alt="Licht"
+                    overlayText="light"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="icons\LogoWienerGenossenschaften.png"
+                    alt="Wiener Genossenschaft"
+                    overlayText="find a flat"
+                  />
+                </Grid>
               </Grid>
-              <Grid item xs={12}>
-                <Typography className="border responsive-border text-justify">
+            </Grid>
+            {/* Dritter Container */}
+            <Grid item xs={4} sx={{}}>
+              <Grid
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="stretch"
+              >
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\friends.jpg"
+                    alt="Friends"
+                    overlayText="friends"
+                  />
+                </Grid>
+                {/* <Grid item xs={12}>
+                <Typography
+                  padding={2}
+                  className="border responsive-border text-justify-uppercase"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Dicta autem animi impedit perferendis iusto cumque, obcaecati
                   repellendus sapiente aliquid illo.
                 </Typography>
-              </Grid>
-              <Grid item xs={12} className="border-bottom  responsive-border">
-                <ImageHoverEffect
-                  src="images\kraehe.jpg"
-                  alt="Crow"
-                  overlayText="crow"
-                />
+              </Grid> */}
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\kraehe.jpg"
+                    alt="Crow"
+                    overlayText="ink&brush"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <ImageHoverEffect
+                    src="images\Autoreifen.jpg"
+                    alt="Woman with weel"
+                    overlayText="2 days alone in kolberg"
+                  />
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Box>
-      {/* PROJECTS: */}
+        </Box>
+      </Element>
+      {/* CONTACT: */}
       <Element name="contact">
         <Box margin={2}>
           <Typography variant="h3" className="header-right" marginLeft={5}>
             Contact
           </Typography>
           <Typography className="text-justify" variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
-            maiores itaque! Odit amet sint omnis, nisi fuga commodi soluta
-            veritatis quam delectus beatae? Quasi, recusandae necessitatibus.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
-            maiores itaque! Odit amet sint omnis, nisi fuga commodi soluta
-            veritatis quam delectus beatae? Quasi, recusandae necessitatibus.
+            1160 Ottakring, Vienna +43 699 11909066 benediktervalentina@gmx.at
+            GitHub: github.com/vlntnaBndktr LinkedIn:
+            linkedin.com/in/valentina-benedikter
           </Typography>
         </Box>
       </Element>
