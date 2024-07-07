@@ -17,8 +17,8 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
       sx={{
         position: 'relative',
         display: 'block',
-        width: '100%',
-        height: 'auto',
+        width: 'auto',
+        height: '60vh',
         overflow: 'hidden',
         filter: hovered ? 'grayscale(0%)' : 'grayscale(100%)',
         transition: 'filter 2s ease', // Übergangseffekt für den Filter
@@ -31,22 +31,22 @@ const ImageHoverEffect = ({ src, alt, overlayText }) => {
         alt={alt}
         style={{
           display: 'block',
-          width: '100%',
-          height: 'auto',
+          width: 'auto',
+          height: '100%',
         }}
       />
       <Box
         sx={{
-          fontSize: 40,
-          fontWeight: 400,
+          fontSize: '5vw',
+          fontWeight: 300,
           position: 'absolute',
           bottom: 0,
           right: 0,
-          // color: 'black',
-          padding: '20px',
           zIndex: 1,
           color: hovered ? 'white' : 'black',
           transition: 'opacity 0.3s ease',
+          textTransform: 'uppercase',
+          lineHeight: 0.71,
         }}
       >
         {overlayText}

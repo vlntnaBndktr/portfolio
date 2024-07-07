@@ -6,33 +6,24 @@ const theme = createTheme({
     fontWeight: 200,
     h1: {
       fontFamily: 'Reddit Mono, monospace',
-      fontWeight: 300,
-      fontSize: 'clamp(2rem, 17.5vw, 20rem)',
+      fontWeight: 400,
+      fontSize: 'clamp(2rem, 18vw, 20rem)',
       position: 'relative',
       lineHeight: 0.71,
     },
 
     h2: {
       fontFamily: 'Reddit Mono, monospace',
-      fontWeight: 200,
-      fontSize: '2.125rem', // Standardgröße für größere Bildschirme (entspricht 'h2')
-      '@media (max-width:600px)': {
-        fontSize: '2rem', // entspricht 'h4' für kleinere Bildschirme
-      },
-      '@media (min-width:601px) and (max-width:960px)': {
-        fontSize: '3rem', // Anpassung für mittlere Bildschirme
-      },
-      '@media (min-width:961px) and (max-width: 1280px)': {
-        fontSize: '4rem', // Anpassung für größere mittlere Bildschirme
-      },
-      '@media (min-width: 1281px)': {
-        fontSize: '5rem',
-      },
+      fontWeight: 400,
+      fontSize: 'clamp(2rem, 12vw, 20rem)',
+      position: 'relative',
+      lineHeight: 0.71,
     },
     h3: {
       fontFamily: 'Reddit Mono, monospace',
-      fontWeight: 300,
+      fontWeight: 600,
       fontSize: '5rem',
+      lineHeight: 0.71,
       '@media (max-width:600px)': {
         fontSize: '2rem', // Smartphone/kleinere Bildschirme
         fontWeight: 400,
@@ -45,7 +36,7 @@ const theme = createTheme({
         fontSize: '5rem', // Anpassung für größere mittlere Bildschirme
       },
       '@media (min-width: 1281px)': {
-        fontSize: '5rem',
+        fontSize: '6rem',
       },
     },
     h4: {
@@ -59,6 +50,7 @@ const theme = createTheme({
       fontSize: '2rem',
       fontWeight: 300,
       lineHeight: 1.2,
+      // textTransform: 'uppercase',
       '@media (max-width:600px)': {
         fontSize: '1rem', // Smartphone/kleinere Bildschirme
         fontWeight: 400,

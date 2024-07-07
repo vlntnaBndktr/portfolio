@@ -16,7 +16,7 @@ export default function Positions() {
   return (
     <>
       {/* MENU: */}
-      <Box className="menu border-bottom  responsive-border">
+      {/* <Box className="menu border-bottom  responsive-border">
         <Link to="about" smooth={true} duration={1000}>
           <Typography variant="h2">About</Typography>
         </Link>
@@ -26,12 +26,12 @@ export default function Positions() {
         <Link to="contact" smooth={true} duration={1000}>
           <Typography variant="h2">Contact</Typography>
         </Link>
-      </Box>
+      </Box> */}
       {/* NAME/LOGO: */}
-      <Box className="parent" marginBottom={4}>
-        <Box className="heart">
+      <Box className="parent">
+        {/* <Box className="heart">
           <FavoriteIcon color="success" fontSize="large"></FavoriteIcon>
-        </Box>
+        </Box> */}
         <Box className="child child-1">
           <Typography variant="h1">Valentina</Typography>
         </Box>
@@ -40,10 +40,17 @@ export default function Positions() {
           <Typography variant="h1">Benedikter</Typography>
         </Box>
       </Box>
+      <Box className="subheader">
+        <Typography variant="h1">Projects</Typography>
+      </Box>
       {/* ABOUT: */}
       <Element name="about">
-        <Box margin={2}>
-          <Typography variant="h3" className="header-left" marginRight={5}>
+        <Box className="border-tb responsive-border">
+          <Typography
+            variant="h3"
+            className="header-left border-bottom responsive-border"
+            marginRight={5}
+          >
             Full Stack Web Developer
           </Typography>
           <Typography className="text-justify" variant="body1">
@@ -57,10 +64,14 @@ export default function Positions() {
             and tinkering with.
           </Typography>
         </Box>
-        <Box paddingBottom={4} marginTop={4}>
+        <Box
+          // paddingBottom={4}
+          marginTop={4}
+          className="border-tb responsive-border"
+        >
           <Techstack />
         </Box>
-        <Box margin={2}>
+        <Box margin={2} className="border-tb responsive-border">
           <Typography variant="h3" className="header-right" marginLeft={5}>
             Techstack
           </Typography>
@@ -75,7 +86,7 @@ export default function Positions() {
       </Element>
       {/* PROJECTS: */}
       <Element name="projects">
-        <Box className="border responsive-border">
+        <Box className="border responsive-border scrollable-section">
           <Grid container columns={{ xs: 4, md: 12 }}>
             {/* Erster Vertikaler Container */}
             <Grid item xs={4}>
@@ -187,8 +198,11 @@ export default function Positions() {
         </Box>
       </Element>
       {/* CONTACT: */}
+      <Box className="subheader">
+        <Typography variant="h1">Contact</Typography>
+      </Box>
       <Element name="contact">
-        <Box margin={2}>
+        <Box margin={2} className="border-tb responsive-border">
           <Typography variant="h3" className="header-right" marginLeft={5}>
             Contact
           </Typography>
