@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Link, Element } from 'react-scroll';
-import { Image, ImageHoverEffect } from './imageeffects';
+import { ImageHoverEffect } from './imageeffects';
 
 export default function StickyHeader() {
   return (

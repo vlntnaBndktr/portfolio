@@ -4,11 +4,17 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { Element } from 'react-scroll';
-import { Image, ImageHoverEffect } from './imageeffects';
+import { ImageHoverEffect } from './imageeffects';
 import { Typography } from '@mui/material';
 import Projects from './projects';
+import ProjectsScrollbar from './projectsScrollbar';
 import About from './about';
 import Techstack from './techstack';
+import DomainOutlinedIcon from '@mui/icons-material/DomainOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Layout() {
   const theme = useTheme();
@@ -24,37 +30,39 @@ export default function Layout() {
         <Box className="child child-2 ">
           <Typography variant="h1">Benedikter</Typography>
         </Box>
+
+        <Box>
+          <Typography variant="h4" className="child child-3">
+            Full Stack Web Developer
+          </Typography>
+        </Box>
       </Box>
 
       {/* PROJECTS: */}
       <Element name="projects">
-        <Box className="border-tb responsive-border relative-container">
-          <Box className="subheader">
-            <Typography variant="h2" className="header-left">
-              Projects
-            </Typography>
-          </Box>
-          <Grid container direction="row" wrap="nowrap">
-            <Projects />
-          </Grid>
-        </Box>
+        <ProjectsScrollbar />
       </Element>
       {/* ABOUT: */}
 
       <Element name="about">
-        <Box className=" responsive-border" paddingBottom={10}>
-          <Typography variant="h2" className="header-right" marginLeft={5}>
+        <Box className=" responsive-border">
+          <Typography
+            variant="h2"
+            className="header-right"
+            marginLeft={10}
+            marginBottom={4}
+          >
             About
           </Typography>
-          <Typography className="text-justify" variant="body1">
-            I am a Web Developer based in Vienna. I am particularly interested
-            in the development of intuitive and appealing user interfaces, where
-            I can combine design and technical skills, as well as the creation
-            of a solid backend with code that lasts. I have a detail- and
-            quality-oriented workstyle in everything i do. When I'm not
-            programming, I love to continue construction in the analog world. I
-            always have at least one craft or arts project that I am building
-            and tinkering with.
+          <Typography padding={10} className="text-justify" variant="body1">
+            Hi, I'm Valentina, a Full Stack Web Developer based in Vienna. I'm
+            particularly interested in developing intuitive and visually
+            appealing user interfaces, where I can combine my creative and
+            technical skills, as well as building a solid backend with
+            sustainable code. I have a detail- and quality-oriented workstyle in
+            everything I do. When I'm not programming, I enjoy working on analog
+            projects. I always have at least one craft or art project that I am
+            building and tinkering with.
           </Typography>
         </Box>
       </Element>
@@ -62,7 +70,7 @@ export default function Layout() {
       {/* TECHSTACK: */}
 
       <Element name="techstack">
-        <Box className="border-bottom responsive-border" paddingBottom={10}>
+        <Box paddingBottom={10} marginLeft={10} marginRight={10}>
           <Techstack />
         </Box>
       </Element>
@@ -70,22 +78,50 @@ export default function Layout() {
       {/* CONTACT: */}
 
       <Element name="contact">
-        <Box className="responsive-border" paddingBottom={10}>
-          <Typography variant="h2" className="header-left" marginRight={5}>
+        <Box
+          className="responsive-border"
+          paddingBottom={5}
+          backgroundColor="black"
+        >
+          <Typography
+            variant="h2"
+            className="header-left"
+            color={'white'}
+            marginRight={5}
+          >
             Contact
           </Typography>
-          <Typography className="text-justify" variant="body1">
-            1160 Ottakring, Vienna +43 699 11909066 benediktervalentina@gmx.at
-            GitHub: github.com/vlntnaBndktr LinkedIn:
-            linkedin.com/in/valentina-benedikter
-          </Typography>
+          <Box color={'white'} textAlign={'right'} padding={10}>
+            <Typography variant="h3">
+              1160 Ottakring, Vienna <DomainOutlinedIcon fontSize="large" />
+            </Typography>
+            <Typography variant="h3">
+              +43 699 11909066 <CallOutlinedIcon fontSize="large" />
+            </Typography>
+            <Typography variant="h3">
+              benediktervalentina@gmx.at <EmailOutlinedIcon fontSize="large" />
+            </Typography>
+            <Typography variant="h3">
+              <a
+                href="https://github.com/vlntnaBndktr"
+                style={{ color: 'white' }}
+              >
+                github.com/vlntnaBndktr
+              </a>{' '}
+              <GitHubIcon fontSize="large" />
+            </Typography>
+            <Typography variant="h3">
+              <a
+                href="https://linkedin.com/in/valentina-benedikter"
+                style={{ color: 'white' }}
+              >
+                linkedin.com/in/valentina-benedikter
+              </a>{' '}
+              <LinkedInIcon fontSize="large" />
+            </Typography>
+          </Box>
         </Box>
       </Element>
-      {/* <Typography backgroundColor="black">
-        1160 Ottakring, Vienna +43 699 11909066 benediktervalentina@gmx.at
-        GitHub: github.com/vlntnaBndktr LinkedIn:
-        linkedin.com/in/valentina-benedikter
-      </Typography> */}
     </>
   );
 }

@@ -7,7 +7,7 @@ const theme = createTheme({
     h1: {
       fontFamily: 'Reddit Mono, monospace',
       fontWeight: 400,
-      fontSize: 'clamp(2rem, 18vw, 20rem)',
+      fontSize: 'clamp(2rem, 12vw, 20rem)',
       position: 'relative',
       lineHeight: 0.71,
     },
@@ -21,28 +21,30 @@ const theme = createTheme({
     },
     h3: {
       fontFamily: 'Reddit Mono, monospace',
-      fontWeight: 600,
-      fontSize: '5rem',
-      lineHeight: 0.71,
+      fontWeight: 200,
+      fontSize: '2rem',
+      lineHeight: 1,
+
       '@media (max-width:600px)': {
-        fontSize: '2rem', // Smartphone/kleinere Bildschirme
-        fontWeight: 400,
+        fontSize: '1rem', // Smartphone/kleinere Bildschirme
+        fontWeight: 300,
       },
       '@media (min-width:601px) and (max-width:960px)': {
-        fontSize: '3rem', // Anpassung für mittlere Bildschirme
-        fontWeight: 400,
+        fontSize: '1.5rem', // Anpassung für mittlere Bildschirme
+        fontWeight: 300,
       },
       '@media (min-width:961px) and (max-width: 1280px)': {
-        fontSize: '5rem', // Anpassung für größere mittlere Bildschirme
+        fontSize: '2rem', // Anpassung für größere mittlere Bildschirme
       },
       '@media (min-width: 1281px)': {
-        fontSize: '6rem',
+        fontSize: '2rem',
       },
     },
     h4: {
       fontFamily: 'Reddit Mono, monospace',
-      fontSize: '3rem',
-      fontWeight: 200,
+      fontSize: '4vw',
+      fontWeight: 300,
+      textTransform: 'uppercase',
     },
 
     body1: {

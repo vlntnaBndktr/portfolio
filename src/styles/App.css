@@ -3,13 +3,13 @@
 /* LOGO/NAME */
 .child {
   position: absolute;
-  top: 6vw;
 }
 
 .child-1 {
   /* border: 2px solid blue; */
   text-transform: uppercase;
-  right: 0;
+  top: 1.5vh;
+  right: 8px;
   z-index: 1;
   color: black;
 }
@@ -17,35 +17,57 @@
 .child-2 {
   /* border: 2px solid red; */
   text-transform: uppercase;
-  right: 0;
+  top: 10vw;
+  right: 8px;
   z-index: 2;
+  color: black;
+}
+.child-3 {
+  /* border: 2px solid red; */
+  text-transform: uppercase;
+  top: 20vw;
+  right: 8px;
+  z-index: 3;
   color: black;
 }
 
 .parent {
   position: relative;
   /* border: 2px solid green; */
-  height: clamp(2rem, 19vw, 20rem);
-  /* border-bottom: 2px solid black;
-  border-top: 30px solid white; */
+  height: clamp(2rem, 30vw, 32rem);
+  /* border-bottom: 2px solid black; */
 }
 
 /* PROJECTS SECTION: */
 .horizontal-scroll {
-  display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  max-width: 100%; /* Container nicht breiter als das Ansichtsfenster ist */
 }
 
-.horizontal-scroll .MuiGrid-item {
-  flex: 0 0 auto; /* Verhindert, dass die Items sich ausdehnen */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-arrow-left {
+  left: 10px;
+}
+
+.scroll-arrow-right {
+  right: 10px;
 }
 
 /* SUBHEADER */
 
 .subheader {
   position: absolute;
+  top: 0px;
   left: 0;
   z-index: 4;
   color: white;
@@ -189,12 +211,6 @@
   }
 }
 
-/* .menu {
-  position: relative;
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  cursor: pointer;
-  padding: 16px;
-  z-index: 3;
-} */
+.large-icon {
+  font-size: large;
+}

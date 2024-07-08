@@ -4,7 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import { Link, Element } from 'react-scroll';
-import { Image, ImageHoverEffect } from './imageeffects';
+import { ImageHoverEffect } from './imageeffects';
 import { Container, Typography } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import '../styles/App.css';
