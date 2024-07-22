@@ -1,5 +1,26 @@
 /* App Komponente */
 
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+}
+
+.grid-container {
+  background-color: #0e0a0a;
+  color: whitesmoke;
+  height: 100vh;
+}
+
+.grid-item {
+  border-right: 1px solid gray;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+}
+.grid-item-last {
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+}
+
 /* LOGO/NAME */
 .child {
   position: absolute;
@@ -25,7 +46,7 @@
 .child-3 {
   /* border: 2px solid red; */
   text-transform: uppercase;
-  top: 20vw;
+  top: 19vw;
   right: 8px;
   z-index: 3;
   color: black;
@@ -34,7 +55,7 @@
 .parent {
   position: relative;
   /* border: 2px solid green; */
-  height: clamp(2rem, 30vw, 32rem);
+  height: clamp(2rem, 25vw, 32rem);
   /* border-bottom: 2px solid black; */
 }
 

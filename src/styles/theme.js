@@ -1,5 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
+// other great font: Jersey 25 Charted, Spinnaker, Gaegu(handwritten), Raleway Dots
+
 const theme = createTheme({
   typography: {
     fontFamily: 'Reddit Mono, monospace',
@@ -7,7 +9,7 @@ const theme = createTheme({
     h1: {
       fontFamily: 'Reddit Mono, monospace',
       fontWeight: 400,
-      fontSize: 'clamp(2rem, 12vw, 20rem)',
+      fontSize: 'clamp(2rem, 10vw, 20rem)',
       position: 'relative',
       lineHeight: 0.71,
     },

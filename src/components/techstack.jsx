@@ -7,7 +7,7 @@ const TechIcon = ({ src, alt }) => {
       sx={{
         display: 'inline-block',
         width: 'auto',
-        height: 'clamp(2rem, 5vw, 10rem)',
+        height: 'clamp(2rem, 5vw, 6rem)',
       }}
     >
       <img
